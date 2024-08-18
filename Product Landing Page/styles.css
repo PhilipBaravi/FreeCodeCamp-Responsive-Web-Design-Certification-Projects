@@ -1,0 +1,191 @@
+/* Reset some basic elements */
+body,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+#header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff0050;
+}
+
+#header-img {
+  height: 80px;
+}
+
+#nav-bar {
+  display: flex;
+  padding-right: 5%;
+}
+
+.nav-link {
+  color: #ff0050;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* Section Styles */
+section {
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ff0050;
+}
+
+#about,
+#music,
+#tour,
+#merch,
+#contact {
+  background-color: #1a1a1a;
+}
+
+#music {
+  background-image: url(music.jpg);
+
+  height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.music-content {
+  padding: 20px;
+  height: 600px;
+}
+
+#merch {
+  background-image: url(merch.jpg);
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #ff0050;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.merch-list li {
+  margin-bottom: 20px;
+}
+
+/* Video Styles */
+#video {
+  width: 100%;
+  height: 400px;
+  max-width: 800px;
+  border: 5px solid #ff0050;
+}
+
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+input[type="email"] {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #ff0050;
+  outline: none;
+}
+
+input[type="email"]:focus {
+  border-color: #ff3385;
+}
+
+input[type="submit"] {
+  background-color: #ff0050;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff3385;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  section {
+    padding: 70px 20px;
+  }
+
+  #video {
+    height: 250px;
+  }
+}

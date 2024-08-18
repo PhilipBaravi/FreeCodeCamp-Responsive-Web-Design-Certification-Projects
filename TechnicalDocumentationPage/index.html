@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>JavaScript Documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Functions" class="nav-link">Functions</a>
+        <a href="#Loops" class="nav-link">Loops</a>
+        <a href="#Events" class="nav-link">Events</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>JavaScript is a versatile programming language that is commonly used to create interactive effects within web browsers.</p>
+            <p>It is an essential part of web development, alongside HTML and CSS.</p>
+            <p>JavaScript allows you to implement complex things on web pages such as displaying timely content updates, interactive maps, and animations.</p>
+            <p>It was originally developed by Netscape as a means to add dynamic and interactive elements to websites.</p>
+            <code>console.log('Hello, JavaScript!');</code>
+            <ul>
+                <li>Developed by Brendan Eich</li>
+                <li>First appeared in 1995</li>
+                <li>Standardized in ECMAScript</li>
+            </ul>
+        </section>
+
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>Variables in JavaScript are used to store data that can be referenced and manipulated later in the program.</p>
+            <p>There are three ways to declare a variable in JavaScript: using `var`, `let`, or `const`.</p>
+            <p>`var` is function-scoped and was traditionally used before ES6 introduced `let` and `const`.</p>
+            <p>`let` and `const` are block-scoped, making them the preferred way to declare variables in modern JavaScript.</p>
+            <p>Use `const` when you want to declare a variable whose value should not change.</p>
+            <code>let x = 10;</code>
+            <ul>
+                <li>Use `var`, `let`, or `const` to declare variables</li>
+                <li>Variables can store different data types such as numbers, strings, and objects</li>
+            </ul>
+        </section>
+
+        <section id="Functions" class="main-section">
+            <header>Functions</header>
+            <p>Functions are blocks of code designed to perform a particular task. They are executed when something invokes them.</p>
+            <p>Functions help keep your code organized and reusable. You can define a function once and use it as many times as you need.</p>
+            <p>JavaScript functions can accept parameters, which allows you to pass values into them.</p>
+            <p>They can also return values, making them powerful tools for writing dynamic code.</p>
+            <p>There are different ways to define functions in JavaScript, such as function declarations, function expressions, and arrow functions.</p>
+            <code>function greet() { alert('Hello, World!'); }</code>
+            <ul>
+                <li>Functions can accept parameters and return values</li>
+                <li>Functions help in reusing code</li>
+            </ul>
+        </section>
+
+        <section id="Loops" class="main-section">
+            <header>Loops</header>
+            <p>Loops are used in JavaScript to perform repetitive tasks based on a condition.</p>
+            <p>The most common loops are `for`, `while`, and `do-while` loops.</p>
+            <p>The `for` loop is used when you know the number of iterations ahead of time.</p>
+            <p>The `while` loop continues to execute as long as the condition remains true.</p>
+            <p>The `do-while` loop is similar to the `while` loop, but it ensures that the loop body is executed at least once before checking the condition.</p>
+            <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+            <ul>
+                <li>Common loops: `for`, `while`, `do-while`</li>
+                <li>Loops help in automating repetitive tasks</li>
+            </ul>
+        </section>
+
+        <section id="Events" class="main-section">
+            <header>Events</header>
+            <p>Events in JavaScript are actions that can be detected by your program, such as clicks, hovers, or key presses.</p>
+            <p>JavaScript allows you to execute code when specific events occur, such as when a user clicks a button or when a web page has finished loading.</p>
+            <p>Event listeners can be added to HTML elements to execute code in response to specific events.</p>
+            <p>Common events include `click`, `mouseover`, `keydown`, and `submit`.</p>
+            <p>Handling events properly is crucial for creating interactive web pages.</p>
+            <code>document.getElementById('myBtn').addEventListener('click', function() { alert('Button clicked!'); });</code>
+            <ul>
+                <li>Events are used to create interactive web pages</li>
+                <li>Event listeners can be added to HTML elements to execute code in response to specific events</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

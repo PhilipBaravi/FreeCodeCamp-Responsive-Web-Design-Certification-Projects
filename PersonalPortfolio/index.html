@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>MyPortfolio</h1>
+            </div>
+            <ul>
+                <li><a href="#welcome-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/PhilipBaravi" id="profile-link" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+        <hr id="nav-hr"/>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section">
+        <div class="welcome-content">
+            <h1>Welcome to My Personal Portfolio Project</h1>
+            <p>Hi, I'm a web developer passionate about turning ideas into beautiful, functional websites. This project was created following the steps provided in the freeCodeCamp curriculum and was made as fast as possible to demonstrate the skills I've learned.</p>
+            <a href="https://www.linkedin.com/in/philip-baravi-2b2a521a2/" class="btn" target="_blank">Visit My LinkedIn Profile</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profilepicture.jpeg" alt="My Photo" class="profile-pic">
+                <div class="about-text">
+                    <p>My journey into web development began with a curiosity for how the web works, which evolved into a deep passion for creating and problem-solving. I am proficient in HTML, CSS, JavaScript, jQuery, React, Three.js, Node.js, and have experience with Figma and WordPress.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, staying up-to-date with industry trends, or engaging in Hobbies I enjoy. I'm always looking for new challenges and opportunities to expand my skill set.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <p>Here is a selection of the projects I've worked on. This is not an exhaustive list. To see my full portfolio, including my professional work, please visit my GitHub and LinkedIn profiles.</p>
+            <div class="projects-grid">
+                <div class="project-tile">
+                    <img src="travelguide.png" alt="Project 1" class="project-image">
+                    <div class="project-info">
+                        <h3>Georgian Travel Guide</h3>
+                        <p>This project features a fully responsive travel guide with interactive maps and dynamic content.</p>
+                        <a href="https://georgiantravelguide.com/en" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <img src="Crackers.png" alt="Project 2" class="project-image">
+                    <div class="project-info">
+                        <h3>Crackers</h3>
+                        <p>The "Crackers" project is an NFT-based website that I am still working on.</p>
+                        <a href="#" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>HTML</h3>
+                    <p>Expertise in creating structured and semantic HTML for a wide range of projects.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>CSS</h3>
+                    <p>Proficient in styling web pages with modern CSS techniques including Flexbox and Grid.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>JavaScript</h3>
+                    <p>Experience in writing clean and efficient JavaScript code for dynamic web applications.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>React</h3>
+                    <p>Skilled in building interactive user interfaces with React.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-globe"></i>
+                    <h3>Three.js</h3>
+                    <p>Knowledge in creating 3D graphics and animations with Three.js.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-server"></i>
+                    <h3>Node.js</h3>
+                    <p>Proficiency in building scalable server-side applications with Node.js.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Figma</h3>
+                    <p>Experience in designing user interfaces and prototypes using Figma.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-wordpress"></i>
+                    <h3>WordPress</h3>
+                    <p>Knowledge in creating and managing websites using WordPress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p>Follow me on <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+        </div>
+    </footer>
+</body>
+</html>
